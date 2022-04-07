@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" href="src/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Arcadia Landing Page</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="arc-logo" src="src/img/logo.png" />
+      <div class="nav-bar-div">
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a class="nav-links" href="#pt2">SOMOS ARCADIA</a> &nbsp; &nbsp;
+            </li>
+            |
+            <li>
+              &nbsp; &nbsp;<a class="nav-links" href="#pt3">SOLUCIONES</a>
+              &nbsp; &nbsp;
+            </li>
+            |
+            <li>&nbsp; &nbsp;<a class="nav-links" href="#">BLOG</a></li>
+          </ul>
+        </nav>
+        <div id="phone-btn">
+          <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+          +52 33 2035 0386
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="pt1">
+        <div id="main-info">
+          <h1>
+            ¿Problemas de <br />
+            almacenamiento, logística <br />
+            & distribución?
+          </h1>
+          <p>
+            Te presentamos la solución integral más rápida y eficiente para tu
+            negocio en un solo lugar sin tantos rollos.
+          </p>
+        </div>
+        <button class="contact-btn">CONTÁCTANOS</button>
+      </div>
+      <div id="pt2">
+        <!-- <div id="winfo"></div> -->
+        <div id="solutions-video">
+          <img src="src/img/video-replace.jpg" alt="bodega-img" />
+        </div>
+        <div id="solutions-info">
+          <h2>Creamos soluciones a la medida para tu operación.</h2>
+          <br />
+          <p>
+            Nuestros servicios se adaptan a las necesidades de tu operación y
+            estamos preparados para ayudarte a escalar tu negocio, nuestro
+            enfoque es ayudar a nuestros clientes con sus problemas de
+            almacenaje, transporte, logística y asesoría de nuestros expertos
+            con más de 20 años de experiencia en el mercado.
+          </p>
+        </div>
+      </div>
+      <div id="pt3">
+        <h2>Nuestros servicios</h2>
+        <div id="services-container">
+          <div class="service">
+            <img
+              src="src/img/almacenaje.png"
+              alt="almacenaje"
+              class="service-img"
+            />
+            <div class="service-info">
+              <div class="service-header">
+                <p>ALMACENAJE</p>
+                <i class="fa fa-plus-square-o moreInfo" aria-hidden="true"></i>
+              </div>
+              <div id="info1" class="info">
+                Recepción, almacenaje, preparación de pedidos y despacho de
+                mercancías.
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <img
+              src="src/img/distribucion.png"
+              alt="distribución"
+              class="service-img"
+            />
+            <div class="service-info">
+              <div class="service-header">
+                <p>DISTRIBUCIÓN</p>
+                <i class="fa fa-plus-square-o moreInfo" aria-hidden="true"></i>
+              </div>
+              <div id="info2" class="info">
+                Contamos con unidades propias con el fin de cumplir con sus
+                necesidades puerta a puerta.
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <img
+              src="src/img/integracion.png"
+              alt="integración"
+              class="service-img"
+            />
+            <div class="service-info">
+              <div class="service-header">
+                <p>INTEGRACIÓN DE SERVICIOS</p>
+                <i class="fa fa-plus-square-o moreInfo" aria-hidden="true"></i>
+              </div>
+              <div id="info3" class="info">
+                • Pick and Pack <br />
+                • Picking <br />
+                • Cruces de Anden <br />
+                • Consolidación de mercancía <br />
+                • Maquila simple (con certificación en ISO) <br />
+                • Logística de reversa
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mapa">
+        <h2>Presencia</h2>
+        <img src="src/img/presencia.png" alt="presencia" />
+      </div>
+      <div id="pt4">
+        <h2>Presentes en toda la cadena de suministro</h2>
+        <div id="overflow-img">
+          <img src="src/img/proceso.png" alt="procesos" />
+        </div>
+        <button class="contact-btn">CONTÁCTANOS</button>
+      </div>
+      <div id="pt5">
+        <h2>FAQ'S</h2>
+        <div id="accordion-container">
+          <div class="accordion" id="faqsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  1. ¿Qué los hace diferentes a ustedes, al resto de las
+                  almacenadoras?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  <div>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>
+                      Estudiamos cada operación que pretenden realizar con
+                      nosotros, para hacer las adecuaciones necesarias previo al
+                      inicio de la operación, como consecuencia esto nos hace
+                      ser más eficientes y proactivos.
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>
+                      Elaboramos y le presentamos unmodelo operativo conforme a
+                      sus necesidades.
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>
+                      Capacitamos a nuestro personal para el manejo de su
+                      producto.
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Nosotros somos preventivos, no correctivos.</p>
+                  </div>
+                  <div>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>
+                      Respondemos inmediatamente ante cualquier eventualidad.
+                    </p>
+                  </div>
+                  <div>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>
+                      Entendemos que, trabajando en equipo con usted, podemos
+                      crecer juntos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  2. ¿Qué tipo de producto pueden recibir?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  Somos selectivos, buscamos que los productos puedan convivir
+                  con el resto de mercancía que se almacena, por ello se
+                  solicitan hojas de seguridad y especificaciones del producto.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  3. Quisiera hacer un retrabajo en su bodega, ¿Cuentan con el
+                  espacio suficiente y el capital humano capacitado para poderlo
+                  hacer?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  En efecto, se destina un espacio dedicado donde podamos
+                  trabajar con su proyecto.
+                  <br />
+                  <br />
+                  Previo al inicio de la operación, se estudia detalladamente el
+                  proceso a llevar a cabo; así mismo se le dará visibilidad en
+                  todo momento con evidencias fotográficas y reportes de los
+                  avances.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  4. Radico en otra ciudad, ¿cómo puedo tener control de los
+                  inventarios y pleno manejo de mi mercancía?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  A cada cliente se le destina un ejecutivo de cuenta, quien le
+                  dará visibilidad de toda su operación, tomará evidencias
+                  fotografías, videos y levantara reportes de entrada, así mismo
+                  estará atento a cualquier duda o comentario que pueda surgir,
+                  tanto en la entrada como en la salida de mercancía.
+                  <br />
+                  <br />
+                  Además, que tendrá acceso a nuestra plataforma web, con la
+                  capacidad y versatilidad de modificar la información conforme
+                  a sus necesidades, con esto, podrá gestionar su operación
+                  24/7.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  5. Busco disminuir mis costos de logística, ¿Con ustedes lo
+                  puedo hacer?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  <b style="color: white">Grupo FAMCHES</b>, tiene la capacidad
+                  de ofrecerles servicios integrales en logística, cumpliendo
+                  todos los eslabones de su cadena de suministro, por lo que
+                  entendiendo bien su operación actual podemos ofrecerle un
+                  “traje a la medida”; Que justamente se vea impactado en la
+                  disminución de sus costos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="links">
+        <a href="">Aviso de privacidad</a>
+        <a href="">Unete a nuestro equipo</a>
+      </div>
+      <div id="about">
+        <div id="info-contacto">
+          <p>
+            Punto Sao Paulo <br />
+            Av. De Las Américas 1545 Ste 2131 <br />
+            Providencia 44630 <br />
+            Guadalajara, Jal. - MÉXICO
+          </p>
+
+          <p>
+            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+            &nbsp; +52 33 2035 0386
+          </p>
+
+          <p>
+            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+            &nbsp; +52 33 1066 2770
+          </p>
+
+          <p style="margin-bottom: 0px">
+            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+            &nbsp; contacto@arcadia-almacenadoras.com
+          </p>
+        </div>
+        <div id="info-redes">
+          <img class="arc-logo" src="src/img/logo.png" />
+          <div id="ar">
+            <p>Síguenos en redes sociales</p>
+            <div id="media-icons">
+              <a
+                href="https://www.linkedin.com/company/arcadia-almacenadoras-de-m%C3%A9xico"
+                target="blank"
+                ><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/ARCADIA-Almacenadoras-de-M%C3%A9xico-111047501452976/"
+                target="blank"
+                ><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/arcadia_almacenadoras/"
+                target="blank"
+                ><i class="fa fa-instagram fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
