@@ -373,25 +373,62 @@ ul {
 }
 
 .service {
-  width: 40%;
-  height: 340px;
+  position: relative;
+  width: 48%;
   margin: 5px;
 }
 
-#china-mex {
-  background-color: green;
+.service-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-#arcadia {
-  background-color: var(--fstBlue);
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
 }
 
-#cargame {
-  background-color: orange;
+.service:hover .overlay {
+  width: 100%;
 }
 
-#zeit {
-  background-color: gray;
+.servicer {
+  position: relative;
+  width: 48%;
+  margin: 5px;
+}
+
+.overlayr {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.servicer:hover .overlayr {
+  width: 100%;
+  left: 0;
+}
+
+.hover-img {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 /* End part 3 */
@@ -497,6 +534,10 @@ ul {
   padding: 10px;
 }
 
+.check {
+  width: 20px;
+}
+
 .benefit {
   /* background-color: var(--compBP); */
   display: flex;
@@ -519,10 +560,33 @@ ul {
 /* ------------------------------------------------------------------------------------------ */
 
 #pt7 {
-  background-color: lightgray;
+  background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
   padding: 3rem 5%;
+}
+
+#pt7 > div > h3 {
+  font-size: 32px;
+  width: 120px;
+  margin: 0;
+  color: var(--fstBlue);
+}
+
+#radios-container {
+  display: flex;
+  padding: 20px 80px;
+}
+
+#radios-container > div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+label {
+  color: var(--fstBlue);
+  padding-bottom: 5px;
 }
 
 #news {
@@ -537,8 +601,28 @@ ul {
 }
 
 .post {
-  flex: 0 1 300px;
+  flex: 0 1 250px;
   margin: 5px;
+}
+
+.date-country > p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.post-date {
+  color: var(--fstBlue);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post-country {
+  color: gray;
+}
+
+.post-info {
+  color: var(--fstBlue);
+  text-align: justify;
 }
 
 #image-posts {
@@ -550,6 +634,12 @@ ul {
   background-color: black;
   width: 40%;
   height: 300px;
+}
+
+#image-posts > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* End part 7 */
