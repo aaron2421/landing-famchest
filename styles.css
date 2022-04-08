@@ -363,18 +363,19 @@ ul {
 }
 
 #services-container {
-  display: grid;
-  grid-gap: 20px 10px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  width: 47%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
   height: auto;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
 .service {
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 340px;
+  margin: 5px;
 }
 
 #china-mex {
@@ -415,10 +416,8 @@ ul {
 }
 
 #overflow-img {
-  background-color: black;
-  height: 500px;
   width: 90%;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 #overflow-img > img {
@@ -441,61 +440,137 @@ ul {
   background-color: var(--compBP);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   /* padding: 3rem 15% 8% 10%; */
-  height: 700px;
+  height: 800px;
 }
 
 #pt5 > h2 {
-  font-size: calc(25px + 1.5vw);
-  margin-top: 0px;
-  margin-bottom: 1rem;
+  font-size: calc(18px + 1vw);
+  margin-top: 5%;
   font-weight: bold;
+  text-align: center;
+}
+
+#testimonios {
+  background-color: black;
+  width: 100%;
+  height: 40%;
 }
 
 /* End part 5 */
 /* ------------------------------------------------------------------------------------------ */
 
-footer {
-  background-color: var(--gray);
-  padding: 2rem 10% 5% 10%;
-}
-
-#links {
-  margin-left: 80px;
-  margin-bottom: 5%;
-}
-
-#links > a {
-  text-decoration: none;
-  color: var(--green);
-  margin-right: 120px;
-}
-
-#about {
-  display: flex;
-  justify-content: space-evenly;
-  height: 200px;
-}
-
-#info-contacto {
-  width: 40%;
-}
-
-#info-redes {
+#pt6 {
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 40%;
+  padding: 5%;
 }
 
-#media-icons {
+#pt6 > h2 {
+  font-size: calc(18px + 1vw);
+  margin: 0 0 20px 0;
+  max-width: 350px;
+  color: var(--fstBlue);
+  font-weight: bold;
+  text-align: center;
+}
+
+#pt6 > p {
+  font-size: calc(14px + .5vw);
+  color: var(--fstBlue);
+  font-weight: bold;
+  text-align: center;
+}
+
+#benefit-main {
+  width: 50%;
+  margin: 50px 0;
+}
+
+.benefit-container {
+  /* background-color: var(--secBlue); */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.benefit {
+  /* background-color: var(--compBP); */
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+.benefit > p {
+  color: var(--fstPrpl);
+  font-weight: bold;
+  margin: 0;
+}
+
+.benefit > span {
+  color: gray;
+  margin-top: 10px;
+}
+
+/* End part 6 */
+/* ------------------------------------------------------------------------------------------ */
+
+#pt7 {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5%;
+}
+
+#news {
+  display: flex;
+}
+
+#posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.post {
+  flex: 0 1 300px;
+  margin: 5px;
+}
+
+#image-posts {
   display: flex;
   justify-content: space-evenly;
 }
 
-#media-icons > a {
-  color: white;
+#image-posts > div {
+  background-color: black;
+  width: 40%;
+  height: 300px;
+}
+
+/* End part 7 */
+/* ------------------------------------------------------------------------------------------ */
+
+footer {
+  background-image: linear-gradient(45deg, var(--fstBlue), var(--terBlue) 150%,  var(--terBlue));
+  padding: 5% 1rem;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer-logo {
+  background-color: black;
+  width: 30%;
+  height: 100px;
+  margin: 30px 0;
 }
 
 /* End footer */
