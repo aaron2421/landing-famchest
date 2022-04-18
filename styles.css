@@ -3,9 +3,13 @@
   --secBlue: #178de2;
   --terBlue: #4065e7;
   --compBP: #672ff1;
-  --fstPrpl: #8c19eb;
-  --secPrpl: #a717e0;
   --terPrpl: #c210d6;
+  /* btn morado */
+  --fstPrpl: #8c19eb;
+  --secPrpl: #a51ddb;
+  /* btn naranja */
+  --fstOrng: #ff9800;
+  --secOrgn: #f6412d;
 }
 
 html {
@@ -42,8 +46,8 @@ header {
   z-index: 2;
 }
 
-.arc-logo {
-  width: 120px;
+.logo {
+  width: 180px;
 }
 
 .arc-img {
@@ -179,144 +183,29 @@ ul {
   margin: 40px 0;
 }
 
-.btn-container {
-  background-image: linear-gradient(to right, var(--fstPrpl), var(--terPrpl));
-  border-radius: 5px;
-}
-
-.contact-btn {
-  background-color: unset;
+.btn {
+  background-size: 400% auto;
   border: none;
   border-radius: 5px;
   width: fit-content;
   padding: 12px 60px;
   font-size: 20px;
   font-weight: bold;
-  transition: all 0.6s;
+  transition: all .8s;
   cursor: pointer;
 }
 
-.contact-btn:hover {
-  background-color: var(--fstPrpl);
+.btn:hover {
+  background-position: right center;
+}
+
+.btn-purple {
+  background-image: linear-gradient(to right, black 0%, var(--fstPrpl) 85%, var(--secPrpl) 95%);
 }
 
 /* End part 1 */
 /* ------------------------------------------------------------------------------------------ */
 
-/* #pt2 {
-  background-image: url("src/img/about-back.png");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  padding: 6rem;
-}
-
-#solutions-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0 0 1rem 6rem;
-}
-
-#solutions-video > img {
-  width: 100%;
-}
-
-#solutions-info {
-  width: 100%;
-  height: fit-content;
-  min-width: 250px;
-  padding: 0px 8rem 1rem 2rem;
-  text-align: start;
-}
-
-#solutions-info > h2 {
-  margin: 0px;
-  font-size: calc(18px + 2vw);
-}
-
-#solutions-info > p {
-  font-size: calc(10px + 0.6vw);
-} */
-
-/* End part 2 */
-/* ------------------------------------------------------------------------------------------ */
-
-/* #pt3 {
-  background-image: url("src/img/services-back.jpg");
-  background-size: cover;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem;
-}
-
-#pt3 > h2 {
-  margin-top: 0px;
-  margin-bottom: 2rem;
-  font-size: calc(25px + 1.5vw);
-}
-
-#services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-}
-
-.service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 0 1 320px;
-  margin: 20px;
-}
-
-.service-img {
-  width: 320px;
-  height: 215px;
-}
-
-.service-info {
-  background-color: var(--green);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-.service-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-.service-header > * {
-  margin: 16px;
-}
-
-.info {
-  overflow: hidden;
-  background-color: var(--green);
-  max-height: 0;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-}
-
-.service-info:hover > .info {
-  max-height: 180px;
-  padding: 10px;
-  display: flex;
-} */
-
-/* End part 3 */
-/* ------------------------------------------------------------------------------------------ */
 
 #pt2 {
   background-color: white;
@@ -353,18 +242,36 @@ ul {
   margin-bottom: 40px;
 }
 
-.btn-container-p {
-  background-image: linear-gradient(
-    45deg,
-    var(--terBlue),
-    var(--fstBlue) 80%,
-    var(--fstBlue)
-  );
-  border-radius: 5px;
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: black;
 }
 
-.contact-btn-p:hover {
-  background-color: var(--terBlue);
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: whitesmoke;
+  color: var(--compBP);
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.btn-orange {
+  background-image: linear-gradient(to right, black 0%, var(--secOrgn) 80%, var(--fstOrng) 90%);
 }
 
 /* End part map */
@@ -450,13 +357,31 @@ ul {
 }
 
 .hover-img {
-  white-space: nowrap;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hover-img > img {
+  width: 200px;
+}
+
+.chmex {
+  background-color: green;
+}
+
+.arcadia {
+  background-color: blue;
+}
+
+.cargame {
+  background-color: orangered;
+}
+
+.zeit {
+  background-color: white;
 }
 
 /* End part 3 */
@@ -489,19 +414,9 @@ ul {
   width: 100%;
 }
 
-.btn-container-pro {
-  background-image: linear-gradient(
-    45deg,
-    var(--terBlue),
-    var(--fstPrpl) 70%,
-    var(--fstPrpl)
-  );
-  border-radius: 5px;
+.btn-blue {
+  background-image: linear-gradient(to right, black 0%, var(--terBlue) 80%, var(--fstPrpl) 90%);
 }
-
-/* .contact-btn-pro:hover {
-  background-color: var(--terBlue);
-} */
 
 /* End part 4 */
 /* ------------------------------------------------------------------------------------------ */
@@ -695,10 +610,12 @@ footer > div {
 }
 
 #footer-logo {
-  background-color: black;
-  width: 30%;
-  height: 100px;
+  width: 300px;
   margin: 30px 0;
+}
+
+#footer-logo > img {
+  width: 100%;
 }
 
 /* End footer */
