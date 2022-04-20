@@ -2,6 +2,8 @@ var phoneBtn = document.getElementById("phone-btn");
 var contactBtn = document.getElementsByClassName("contact-btn")[0];
 var contactBtn2 = document.getElementsByClassName("contact-btn")[1];
 
+var ancho = window.innerWidth;
+
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -13,9 +15,9 @@ function myFunction() {
 
 phoneBtn.onclick = () => {
   if (ancho <= 600) {
-    location.href = "tel:+523320350386";
+    location.href = "tel:+526141903556";
   } else {
-    location.href = "https://api.whatsapp.com/send?phone=+523320350386";
+    location.href = "https://api.whatsapp.com/send?phone=+526141903556";
   }
 };
 
