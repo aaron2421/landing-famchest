@@ -10,6 +10,14 @@
   /* btn naranja */
   --fstOrng: #ff9800;
   --secOrgn: #f6412d;
+  /* cargame */
+  --bgCargame: #ff6400;
+  /* chinamex */
+  --bgChinamex: #008e36;
+  /* arcadia */
+  --bgArcadia: #263178;
+  /* zeit */
+  --bgZeit: #ffffff;
 }
 
 html {
@@ -228,8 +236,8 @@ ul {
 }
 
 #pt2 > img {
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  margin: 5% 0;
 }
 
 /* End part 2 */
@@ -369,19 +377,19 @@ ul {
 }
 
 .chmex {
-  background-color: green;
+  background-color: var(--bgChinamex);
 }
 
 .arcadia {
-  background-color: blue;
+  background-color: var(--bgArcadia);
 }
 
 .cargame {
-  background-color: orangered;
+  background-color: var(--bgCargame);
 }
 
 .zeit {
-  background-color: white;
+  background-color: var(--bgZeit);
 }
 
 /* End part 3 */

@@ -21,10 +21,10 @@ phoneBtn.onclick = () => {
   }
 };
 
-contactBtn.onclick = () => {
-  location.href = "https://calendly.com/arcadia-almacenadoras/30min";
-}
+// contactBtn.onclick = () => {
+//   location.href = "https://calendly.com/arcadia-almacenadoras/30min";
+// }
 
-contactBtn2.onclick = () => {
-  location.href = "https://calendly.com/arcadia-almacenadoras/30min";
-}
+// contactBtn2.onclick = () => {
+//   location.href = "https://calendly.com/arcadia-almacenadoras/30min";
+// }
