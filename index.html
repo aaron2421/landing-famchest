@@ -67,7 +67,7 @@
           <a href="#">BLOG</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="myNavLinks()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -76,7 +76,23 @@
           <p>ATENCIÓN DUEÑO DE NEGOCIOS</p>
           <H1>Ahora podrás tener un sólo punto de encuentro para toda tu cadena de suministro</H1>
         </div>
-        <div id="pt1-video"></div>
+        <div id="pt1-video">
+          <!-- Wistia video -->
+          <div class="wistia_responsive_padding wistia-pd">
+            <div class="wistia_responsive_wrapper wistia-wrapper">
+              <div class="wistia_embed wistia_async_q13dj0hlow videoFoam=true wistia-embed">
+                <div class="wistia_swatch wistia-swatch">
+                  <img 
+                    src="https://fast.wistia.com/embed/medias/q13dj0hlow/swatch" 
+                    class="wistia-img"
+                    alt="famchest-video-img" 
+                    aria-hidden="true" 
+                    onload="this.parentNode.style.opacity=1;" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <button class="btn btn-purple">AGENDA UNA ASESORIA GRATUITA</button>
       </div>
       <div id="pt2">
@@ -108,8 +124,6 @@
           <div id="tampico" class="tooltip size">
             <span class="tooltiptext">Tampico</span>
           </div>
-
-
 
           <div id="manzanillo" class="tooltip size">
             <span class="tooltiptext">Manzanillo</span>
@@ -230,88 +244,7 @@
         <button class="btn btn-blue">RESERVA TU ASESORIA GRATUITA AHORA</button>
       </div>
 
-      <!-- <div id="pt7">
-        <div id="news">
-          <h3>Últimas noticias</h3>
-          <div id="radios-container">
-            <div>
-              <label for="all-news">
-                <input id="all-news" type="radio" name="news" checked="true"> Todas las noticias
-              </label>
-              <label for="job">
-                <input id="job" type="radio" name="news"> Trabajo
-              </label>
-              <label for="progress">
-                <input id="progress" type="radio" name="news"> Avance
-              </label>
-              <label for="events">
-                <input id="events" type="radio" name="news"> Eventos
-              </label>
-            </div>
-            <div>
-              <label for="posts">
-                <input id="posts" type="radio" name="news"> Publicaciones
-              </label>
-              <label for="press">
-                <input id="press" type="radio" name="news"> Prensa
-              </label>
-              <label for="coments">
-                <input id="coments" type="radio" name="news"> Comentarios
-              </label>
-            </div>
-          </div>
-        </div>
-        <div id="posts-container">
-          <div class="post">
-            <div class="date-country">
-              <p class="post-date">06 de marzo</p>
-              <p class="post-country">México</p>
-            </div>
-            <div class="post-info">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-              Eius illum quisquam excepturi libero minus?
-            </div>
-          </div>
-          <div class="post">
-            <div class="date-country">
-              <p class="post-date">31 de marzo</p>
-              <p class="post-country">México</p>
-            </div>
-            <div class="post-info">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-              Eius illum quisquam excepturi libero minus?
-            </div>
-          </div>
-          <div class="post">
-            <div class="date-country">
-              <p class="post-date">07 de abril</p>
-              <p class="post-country">México</p>
-            </div>
-            <div class="post-info">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-              Eius illum quisquam excepturi libero minus?
-            </div>
-          </div>
-          <div class="post">
-            <div class="date-country">
-              <p class="post-date">10 de abril</p>
-              <p class="post-country">México</p>
-            </div>
-            <div class="post-info">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-              Eius illum quisquam excepturi libero minus?
-            </div>
-          </div>
-        </div>
-        <div id="image-posts">
-          <div>
-            <img src="src/img/ultm.png" alt="post1">
-          </div>
-          <div>
-            <img src="src/img/transp.png" alt="post2">
-          </div>
-        </div>
-      </div> -->
+      <!-- Noticias -->
     </main>
     
     <footer>
@@ -329,5 +262,7 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="https://fast.wistia.com/embed/medias/q13dj0hlow.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
   </body>
 </html>
