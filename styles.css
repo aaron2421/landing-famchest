@@ -328,21 +328,21 @@ ul {
   right: 435px;
 }
 
-#guzman {
+#manzanillo1 {
   position: absolute;
   width: 15px;
   top: 590px;
   right: 450px;
 }
 
-#otro {
+#guadalajara1 {
   position: absolute;
   width: 15px;
   top: 530px;
   right: 460px;
 }
 
-#otro2 {
+#cdguzman {
   position: absolute;
   width: 20px;
   top: 560px;
@@ -435,6 +435,29 @@ ul {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.srv-container {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  bottom: 0;
+}
+
+.srv-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ext-link {
+  display: flex;
+  align-items: center;
+}
+
+.srv-link {
+  text-decoration: underline;
+  margin: 0;
+  padding-left: 10px;
 }
 
 .overlay {
@@ -733,24 +756,49 @@ footer {
     var(--terBlue) 150%,
     var(--terBlue)
   );
-  padding: 5% 1rem;
+  padding: 5% 2rem;
 }
 
-footer > div {
+#links {
+  margin-left: 80px;
+  margin-bottom: 5%;
+}
+
+#links > a {
+  text-decoration: none;
+  color: var(--green);
+  margin-right: 120px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-evenly;
+  height: 320px;
+}
+
+#info-contacto {
+  width: 40%;
+}
+
+#info-redes {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+#media-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#media-icons > a {
+  color: white;
 }
 
 #footer-logo {
-  display: flex;
-  justify-content: center;
   width: 300px;
-  margin: 30px 0;
-}
-
-#footer-logo > img {
-  width: 100%;
 }
 
 /* End footer */
@@ -980,7 +1028,40 @@ footer > div {
     height: 200px;
   }
 
-  #footer-logo > img {
-    width: 70%;
+  #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: unset;
+  }
+
+  #links > a {
+    margin: unset;
+  }
+
+  #info-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  #about {
+    flex-direction: column;
+    height: unset;
+  }
+
+  #info-redes {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #ar {
+    margin-top: 40px;
   }
 }
