@@ -69,14 +69,16 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  flex: 0 1 60%;
-  width: 60%;
+  flex: 0 1 50%;
+  width: 50%;
+  /* 60% */
 }
 
 .nav-bar {
   display: flex;
   padding: 10px 0;
-  width: 620px;
+  /* width: 620px; */
+  width: 200px;
 }
 
 ul {
