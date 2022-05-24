@@ -397,7 +397,7 @@ ul {
 /* End part map */
 /* ------------------------------------------------------------------------------------------ */
 
-#pt3 {
+#servicios {
   background-image: linear-gradient(
     45deg,
     var(--fstBlue),
@@ -411,7 +411,7 @@ ul {
   padding: 3rem;
 }
 
-#pt3 > h2 {
+#servicios > h2 {
   margin-top: 0px;
   margin-bottom: 2rem;
   font-size: calc(18px + 1.5vw);
@@ -926,7 +926,7 @@ footer {
     display: none;
   }
 
-  #pt3 {
+  #servicios {
     padding: 10% 0;
   }
 
